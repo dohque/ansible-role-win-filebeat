@@ -1,6 +1,8 @@
 Ansible Role: win_filebeat
 ===============================
 
+[![Build Status](https://travis-ci.org/dohque/ansible-role-win-filebeat.svg?branch=master)](https://travis-ci.org/dohque/ansible-role-win-filebeat)
+
 An Ansible Role that installs Filebeat on Windows.
 
 
