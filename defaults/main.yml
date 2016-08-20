@@ -1,0 +1,4 @@
+---
+
+filebeat_config_dir: "C:/ProgramData/filebeat/conf.d"
+filebeat_elastic_search_hosts: [ "localhost:9200" ]

@@ -1,0 +1,16 @@
+############################# Filebeat ######################################
+filebeat:
+
+  config_dir: "{{ filebeat_config_dir }}"
+
+output:
+
+  elasticsearch:
+
+    hosts: {{ filebeat_elastic_search_hosts | to_yaml }}
+
+logging:
+
+  files:
+
+    rotateeverybytes: 10485760
