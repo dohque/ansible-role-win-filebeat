@@ -171,6 +171,7 @@ galaxy_info:
     - logging
     - monitoring
     - system
+    - development
     - web
     - elk
     - elasticstack
