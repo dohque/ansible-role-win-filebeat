@@ -11,6 +11,8 @@ output:
 
 logging:
 
+  level: "{{ filebeat_logging_level }}"
+
   files:
 
     rotateeverybytes: 10485760

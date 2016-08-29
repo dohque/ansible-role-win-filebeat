@@ -1,4 +1,5 @@
 ---
 
 filebeat_config_dir: "C:/ProgramData/filebeat/conf.d"
-filebeat_elastic_search_hosts: [ "localhost:9200" ]
+filebeat_elastic_search_hosts: [ "127.0.0.1:9200" ]
+filebeat_logging_level: error
