@@ -31,6 +31,11 @@ filebeat_elastic_search_hosts: [ "localhost:9200" ]
 
 List of Elasticsearch hosts filebeat will connect to.
 
+```yaml
+filebeat_logging_level: error
+```
+
+Logging level for filebeat logs.
 
 Dependencies
 ------------
