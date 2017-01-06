@@ -20,6 +20,12 @@ Role Variables
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
 ```yaml
+filebeat_version: 1.2.3
+```
+
+Filebeat version to install.
+
+```yaml
 filebeat_config_dir: "C:/ProgramData/filebeat/conf.d"
 ```
 

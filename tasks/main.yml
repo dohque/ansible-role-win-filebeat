@@ -1,9 +1,9 @@
 ---
 
-# TODO: add filebeat version
 - name: Ensure filebeat is installed
   win_chocolatey:
     name: filebeat
+    vaersion: "{{filebeat_version}}"
     state: present
 
 - name: Enshire {{filebeat_config_dir}} exists
@@ -12,7 +12,7 @@
 - name: Ensure main filebeat.yml is generated
   win_template:
     src: filebeat.yml.j2
-    dest: C:/ProgramData/chocolatey/lib/filebeat/tools/filebeat-1.2.3-windows/filebeat.yml
+    dest: C:/ProgramData/chocolatey/lib/filebeat/tools/filebeat-{{filebeat_version}}-windows/filebeat.yml
   notify: filebeat restart
 
 - name: Ensure filebeat_log.yml is generated
