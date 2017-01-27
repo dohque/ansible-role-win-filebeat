@@ -6,7 +6,7 @@
     vaersion: "{{filebeat_version}}"
     state: present
 
-- name: Enshire {{filebeat_config_dir}} exists
+- name: Enshure {{filebeat_config_dir}} exists
   win_file: path={{filebeat_config_dir}} state=directory
 
 - name: Ensure main filebeat.yml is generated
