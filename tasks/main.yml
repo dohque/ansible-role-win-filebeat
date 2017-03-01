@@ -3,7 +3,7 @@
 - name: Ensure filebeat is installed
   win_chocolatey:
     name: filebeat
-    vaersion: "{{filebeat_version}}"
+    version: "{{filebeat_version}}"
     state: present
 
 - name: Enshure {{filebeat_config_dir}} exists
